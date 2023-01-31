@@ -11,7 +11,7 @@ const resetButton = document.getElementById('reset');
 const hiddenInput = document.getElementById('input');
 let totalTime;
 const gameLength = 20;
-window.addEventListener('load',  hiddenInput.onfocus);
+
 
 let timer;
 startGame();
@@ -125,4 +125,10 @@ function resetGame(){
 
 function startGame(){
     timer = setInterval(setTime, 1000);
+}
+
+  
+document.body.onload = ()=>{
+  hiddenInput.focus();
+  alert("HELLO")
 }
