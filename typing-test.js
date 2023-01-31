@@ -128,6 +128,6 @@ function startGame(){
 }
 
   
-document.body.onload = ()=>{
+hiddenInput.onload = ()=>{
   hiddenInput.focus();
 }
