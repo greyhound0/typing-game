@@ -130,5 +130,4 @@ function startGame(){
   
 document.body.onload = ()=>{
   hiddenInput.focus();
-  alert("HELLO")
 }
