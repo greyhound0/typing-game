@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing-test</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game">
+
+        <div id="timer">
+            <h1 id="minutesDisplay"></h1> : 
+        <h1 id="secondsDisplay"></h1>
+        
+        </div>
+        <div class="myClass">
+          <h1 style="color: coral;">Enter the displayed Alphabet :</h1>
+          <h1 id="printCharacter"></h1>
+        </div>
+        <div><h2 id="success"></h2></div>
+        <div class="displayNumber"></div>
+        <div class="inputNumber"></div>
+    </div>
+    <input id="input" type="text">
+    <div id="result">
+        <p>You have won the Game in </p> <span id="timeLapsed"></span>
+    </div>
+    <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
+
+    <script src="typing-test.js"></script>
+  </body>
+</html>

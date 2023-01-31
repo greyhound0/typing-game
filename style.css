@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D5CABD;
+}
+
+#printCharacter {
+  font-size: 100px;
+  color: #4E8397;
+}
+
+
+.myClass {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+}
+/* 
+#minutesDisplay,
+#secondsDisplay {
+    margin-left: 80%;
+} */
+
+#timer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    padding-right: 100px;
+}
+
+#result {
+    display: none;
+    color: rgb(3, 59, 34);
+    font-size: 50px;
+}
+
+#reset {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #FF8066;
+    
+}
+#reset:active {
+    background-color: black;
+    color: #FF8066;
+}
+
+#input {
+    visibility: hidden;
+}
