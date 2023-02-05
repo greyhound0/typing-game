@@ -71,7 +71,7 @@ window.addEventListener("keypress", (e) => {
 
     //number or not
     // if(isNaN(e.key)) {
-    //  return showUserMessage(false,false);
+    //  return UserMessage(false,false);
     // }
      
     //equal value
@@ -128,6 +128,6 @@ function startGame(){
 }
 
   
-hiddenInput.onload = ()=>{
-  hiddenInput.focus();
-}
+// hiddenInput.onload = ()=>{
+//   hiddenInput.focus();
+// }
