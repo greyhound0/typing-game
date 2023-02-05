@@ -9,6 +9,8 @@ const result = document.getElementById('result');
 const timeLapsed = document.getElementById('timeLapsed');
 const resetButton = document.getElementById('reset');
 const hiddenInput = document.getElementById('input');
+const correctEnteredCharacters = document.getElementById('correctEnteredCharacters')
+const incorrectEnteredCharacters = document.getElementById('incorrectEnteredCharacters')
 let totalTime;
 const gameLength = 20;
 
@@ -48,7 +50,8 @@ startGame();
         minutesDisplay.innerHTML = getTwoDigitString(minutes);
         secondsDisplay.innerHTML = getTwoDigitString(seconds);
 
-        totalTime = `${getTwoDigitString(minutes)}min & ${getTwoDigitString(seconds)}secs`
+        totalTime = `${getTwoDigitString(minutes)}min & ${getTwoDigitString(seconds)}secs`;
+        userEnteredCharacters = ``
         }
         
         function getTwoDigitString(value){
@@ -79,16 +82,23 @@ window.addEventListener("keypress", (e) => {
     showUserMessage(true);
     generateRandomAlphabet();
     userInputString += e.key;
+    
+    
     if(userInputString.length === gameLength){
         clearInterval(timer);
         game.style.display = 'none';
         result.style.display = 'block';
         timeLapsed.innerText = totalTime;
+        correctEnteredCharacters.innerText = userInputString;
     }
   } 
   
   else{
     showUserMessage(false);
+    incorrectEnteredCharacters.innerText += e.key;
+    
+
+
   }
 });
 

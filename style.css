@@ -34,8 +34,7 @@ body {
 
 #result {
     display: none;
-    color: rgb(3, 59, 34);
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #reset {
@@ -50,6 +49,18 @@ body {
     color: #FF8066;
 }
 
+
 /* #input {
   visibility: hidden;
 } */
+#input {
+    visibility: hidden;
+}
+
+#correctEnteredCharacters {
+  color: rgb(3, 59, 34);
+}
+
+#incorrectEnteredCharacters {
+  color: rgba(235, 28, 9, 0.596)
+}
