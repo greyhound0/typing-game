@@ -14,7 +14,6 @@ const incorrectEnteredCharacters = document.getElementById('incorrectEnteredChar
 let totalTime;
 const gameLength = 20;
 
-window.addEventListener('load', prompt)
 
 let timer;
 startGame();

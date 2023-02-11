@@ -7,7 +7,7 @@
     <title>Typing-test</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="new VKeyboard(keyboard, keyb_callback);"  >
     <div id="game">
 
         <div id="timer">
@@ -36,6 +36,7 @@
         <p style="color: #845EC2;">Incorrect entered Characters are - </p><span id="incorrectEnteredCharacters"></span>
     </div>
     <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
+    <div id="keyboard"></div>
 
     <script src="typing-test.js" onload="document.getElementById('input').focus()"></script>
   </body>
