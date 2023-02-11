@@ -108,7 +108,7 @@ window.addEventListener("keypress", (e) => {
 
     if(isCorrect) {
         success.innerHTML = "SUCCESS";
-    success.style.color = "green";
+    success.style.color = "#00C9A7";
     printCharacter.innerHTML = "";
     }
 
