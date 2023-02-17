@@ -2,8 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #C4FCEF;
-  border: 2px ridge #00C9A7;
+  background: rgb(185,238,247);
+  
   padding: 20px;
   width: 50%;
   margin-left: 25%;
@@ -47,12 +47,26 @@ body {
     width: 80px;
     height: 80px;
     border-radius: 40px;
-    background-color: #845EC2;
+    background-color: #28839F;
+}
+
+#start {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+      background-color: #28839F;
+      margin-left: 350px;
     
 }
+
+#start:active {
+  background-color: black;
+  color: #28839F;
+}
+
 #reset:active {
     background-color: black;
-    color: #845EC2;
+    color: #28839F;
 }
 
 
@@ -69,4 +83,17 @@ body {
 
 #incorrectEnteredCharacters {
   color: rgba(235, 28, 9, 0.596)
+}
+
+#game {
+  display: none;
+  border: 2px ridge #00C9A7;
+}
+
+#gameInstructions {
+  color: #00C9A7;
+  font-size: 30px;
+  display: flex;
+  width: 60vw;
+  flex-direction: column;
 }

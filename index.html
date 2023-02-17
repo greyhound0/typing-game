@@ -16,7 +16,7 @@
         
         </div>
         <div class="myClass">
-          <h1 style="color: #845EC2;">Enter the displayed Alphabet :</h1>
+          <h1 style="color: #28839F;">Enter the displayed Alphabet :</h1>
           <h1 id="printCharacter"></h1>
         </div>
         <div><h2 id="success"></h2></div>
@@ -24,18 +24,26 @@
 
         <div class="inputNumber"></div>
         <input id="input" type="text">
-    </div>
         <div class="inputNumber">
+        </div>
+        <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
       </div>
-      
-    </div>
+    
     
     <div id="result">
-        <p style="color: #845EC2;">You have won the Game in </p> <span id="timeLapsed"></span>
-        <p style="color: #845EC2;">Correct entered Characters are - </p><span id="correctEnteredCharacters"></span>
-        <p style="color: #845EC2;">Incorrect entered Characters are - </p><span id="incorrectEnteredCharacters"></span>
+        <p style="color: #28839F;">You have won the Game in </p> <span id="timeLapsed"></span>
+        <p style="color: #28839F;">Correct entered Characters are - </p><span id="correctEnteredCharacters"></span>
+        <p style="color: #28839F;">Incorrect entered Characters are - </p><span id="incorrectEnteredCharacters"></span>
     </div>
-    <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
+    <div id="gameInstructions">
+      <p>
+        <h1>Welcome to this fun Typing Game</h1> <br>
+        Rules are quite simple: Type the 20 correct characters one by one, 1s penalty for the Incorrect typed character.
+       
+      </p>
+      <button onclick="startGame()" id="start" style="font-size: large;">Start</button>
+
+    </div>
 
     <script src="typing-test.js" onload="document.getElementById('input').focus()"></script>
   </body>

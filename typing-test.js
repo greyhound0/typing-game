@@ -9,14 +9,16 @@ const result = document.getElementById('result');
 const timeLapsed = document.getElementById('timeLapsed');
 const resetButton = document.getElementById('reset');
 const hiddenInput = document.getElementById('input');
-const correctEnteredCharacters = document.getElementById('correctEnteredCharacters')
-const incorrectEnteredCharacters = document.getElementById('incorrectEnteredCharacters')
+const correctEnteredCharacters = document.getElementById('correctEnteredCharacters');
+const incorrectEnteredCharacters = document.getElementById('incorrectEnteredCharacters');
+const start = document.querySelector('#start');
+const gameInstructions = document.querySelector('#gameInstructions');
 let totalTime;
 const gameLength = 20;
 
 
 let timer;
-startGame();
+
 
  let seconds;
  const secondsDenominator = 1000;
@@ -29,7 +31,7 @@ startGame();
  let hoursRemainder;
 
 
- let startTimeInMilliseconds = new Date().getTime();
+ let startTimeInMilliseconds;
  let userInputString = '';
  
  const getTimeInUnit = (timestamp, denom) => {
@@ -134,7 +136,11 @@ function resetGame(){
 }
 
 function startGame(){
+  startTimeInMilliseconds = new Date().getTime();
     timer = setInterval(setTime, 1000);
+    gameInstructions.style.display = "none";
+    game.style.display = "block"
+    
 }
 
   
