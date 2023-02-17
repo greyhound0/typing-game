@@ -44,10 +44,12 @@ body {
 }
 
 #reset {
-    width: 80px;
+    width: 100px;
     height: 80px;
     border-radius: 40px;
     background-color: #28839F;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #start {
@@ -88,6 +90,8 @@ body {
 #game {
   display: none;
   border: 2px ridge #00C9A7;
+  width: 100vh;
+  height: 85vh;
 }
 
 #gameInstructions {
@@ -96,4 +100,14 @@ body {
   display: flex;
   width: 60vw;
   flex-direction: column;
+}
+
+#resetDisplay {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#message {
+  display: flex;
+  justify-content: center;
 }

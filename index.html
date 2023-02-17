@@ -9,24 +9,27 @@
   </head>
   <body>
     <div id="game">
+      <div id="resetDisplay">
 
-        <div id="timer">
-            <h1 id="minutesDisplay"></h1> : 
-        <h1 id="secondsDisplay"></h1>
+        <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
+          <div id="timer">
+              <h1 id="minutesDisplay"></h1> : 
+          <h1 id="secondsDisplay"></h1>
+      </div>
         
         </div>
         <div class="myClass">
           <h1 style="color: #28839F;">Enter the displayed Alphabet :</h1>
           <h1 id="printCharacter"></h1>
         </div>
-        <div><h2 id="success"></h2></div>
+        <div id="message"><h2 id="success"></h2></div>
         <div class="displayNumber"></div>
 
         <div class="inputNumber"></div>
         <input id="input" type="text">
         <div class="inputNumber">
         </div>
-        <button onclick="resetGame()" id="reset" style="font-size: large">Reset</button>
+       
       </div>
     
     
