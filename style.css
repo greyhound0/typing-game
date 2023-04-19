@@ -2,19 +2,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(185,238,247);
-  
+  background: rgb(185, 238, 247);
+
   padding: 20px;
   width: 50%;
   margin-left: 25%;
-
 }
 
 #printCharacter {
   font-size: 100px;
-  color: #00C9A7;
+  color: #00c9a7;
 }
-
 
 .myClass {
   display: flex;
@@ -30,72 +28,75 @@ body {
 } */
 
 #timer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    align-items: center;
-    padding-right: 50px;
-    color: #00C9A7;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  padding-right: 50px;
+  color: #00c9a7;
 }
 
 #result {
-    display: none;
-    font-size: 30px;
+  display: none;
+  font-size: 30px;
 }
 
 #reset {
-    width: 100px;
-    height: 80px;
-    border-radius: 40px;
-    background-color: #28839F;
-    margin-left: 20px;
-    margin-top: 20px;
+  width: 100px;
+  height: 80px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 40px;
+  background-color: #28839f;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #start {
-      width: 80px;
-      height: 80px;
-      border-radius: 40px;
-      background-color: #28839F;
-      margin-left: 350px;
-    
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  border-radius: 40px;
+  border: 2px solid black;
+  background-color: #28839f;
+  margin-left: 350px;
 }
 
 #start:active {
   background-color: black;
-  color: #28839F;
+  color: #28839f;
 }
 
 #reset:active {
-    background-color: black;
-    color: #28839F;
+  background-color: black;
+  color: #28839f;
 }
-
 
 /* #input {
   visibility: hidden;
 } */
 #input {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #correctEnteredCharacters {
-  color: #00C9A7;
+  color: #00c9a7;
 }
 
 #incorrectEnteredCharacters {
-  color: rgba(235, 28, 9, 0.596)
+  color: rgba(235, 28, 9, 0.596);
 }
 
 #game {
   display: none;
-  border: 2px ridge #00C9A7;
+  border: 20px ridge #00c9a7;
+  border-radius: 20px;
   width: 100vh;
   height: 85vh;
 }
 
 #gameInstructions {
-  color: #00C9A7;
+  color: #00c9a7;
   font-size: 30px;
   display: flex;
   width: 60vw;
